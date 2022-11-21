@@ -79,48 +79,20 @@ a:hover{
 
 /* Permet de placer les boutons */
 .first_room {
-    top: 22%;
-    left: 45.25%;
+    top: 41%;
+    left: 43%;
 }
 .second-room {
-    top: 28%;
-    left: 49.5%;
+    top: 39.5%;
+    left: 63%;
 }
 .third-room {
-    top: 32.75%;
-    left: 53.40%;
+    top: 79%;
+    left: 43%;
 }
 .fourth-room {
-    top: 47.5%;
-    left: 34%;
-}
-.fifth-room {
-    top: 56.5%;
-    left: 41%;
-}
-.sixth-room {
-    top: 35%;
-    left: 67%;
-}
-.seventh-room {
-    top: 79%;
-    left: 29%;
-}
-.eighth-room {
-    top: 84%;
-    left: 33%;
-}
-.ninth-room {
-    top: 89%;
-    left: 37%;
-}
-.tenth-room {
-    top: 88%;
-    left: 60%;
-}
-.eleventh-room {
-    top: 1.75%;
-    left: 65.9%;
+    top: 2.5%;
+    left: 66.5%;
 }
 
 /* Fonction permettant d'agrandir les bouton lorsque le curseur passe devant */
