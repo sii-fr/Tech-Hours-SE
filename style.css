@@ -83,14 +83,49 @@ a:hover{
     left: 43%;
 }
 .second-room {
+    top: 28%;
+    left: 49.5%;
+    visibility: hidden;
+}
+.third-room {
+    top: 32.75%;
+    left: 53.40%;
+    visibility: hidden;
+}
+.fourth-room {
+    top: 47.5%;
+    left: 34%;
+    visibility: hidden;
+}
+.fifth-room {
+    top: 56.5%;
+    left: 41%;
+    visibility: hidden;
+}
+.sixth-room {
     top: 39.5%;
     left: 63%;
 }
-.third-room {
+.seventh-room {
     top: 79%;
     left: 43%;
 }
-.fourth-room {
+.eighth-room {
+    top: 84%;
+    left: 33%;
+    visibility: hidden;
+}
+.ninth-room {
+    top: 89%;
+    left: 37%;
+    visibility: hidden;
+}
+.tenth-room {
+    top: 88%;
+    left: 60%;
+    visibility: hidden;
+}
+.eleventh-room {
     top: 2.5%;
     left: 66.5%;
 }
@@ -178,7 +213,8 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 33%;
-    left: 9%;
+    left: 9%;    
+    visibility: hidden;
 }
 
 .third_popup {
@@ -186,7 +222,8 @@ a:hover{
     background-size: 100% 100%;
     margin:auto;
     top: 38%;
-    left: 13%;
+    left: 13%;    
+    visibility: hidden;
 }
 
 .fourth_popup {
@@ -195,6 +232,7 @@ a:hover{
     margin:auto;
     top: 25%;
     left: 45%;
+    visibility: hidden;
 }
 
 .fifth_popup {
@@ -203,6 +241,7 @@ a:hover{
     margin:auto;
     top: 25%;
     left: 50.5%;
+    visibility: hidden;
 }
 
 .sixth_popup {
@@ -227,6 +266,7 @@ a:hover{
     margin:auto;
     top: 26.5%;
     left: 42.5%;
+    visibility: hidden;
 }
 
 .ninth_popup {
@@ -235,6 +275,7 @@ a:hover{
     margin:auto;
     top: 31%;
     left: 47%;
+    visibility: hidden;
 }
 
 .tenth_popup {
@@ -243,6 +284,7 @@ a:hover{
     margin:auto;
     top: 30%;
     left: 44%;
+    visibility: hidden;
 }
 
 .first_mini_popup {
