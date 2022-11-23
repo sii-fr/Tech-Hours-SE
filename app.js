@@ -26,11 +26,6 @@ const first_mini_popup = document.querySelector('.first_mini_popup')
 const second_mini_popup = document.querySelector('.second_mini_popup')
 const third_mini_popup = document.querySelector('.third_mini_popup')
 const fourth_mini_popup = document.querySelector('.fourth_mini_popup')
-const fifth_mini_popup = document.querySelector('.fifth_mini_popup')
-const sixth_mini_popup = document.querySelector('.sixth_mini_popup')
-const seventh_mini_popup = document.querySelector('.seventh_mini_popup')
-const eighth_mini_popup = document.querySelector('.eighth_mini_popup')
-const ninth_mini_popup = document.querySelector('.ninth_mini_popup')
 
 const actual_hour = document.querySelector('.hour_actual')
 

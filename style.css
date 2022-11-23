@@ -195,54 +195,19 @@ a:hover{
 
 .second_mini_popup {
     z-index: 1;
-    background: url('img/CARTE-POPUP_SOPHIA.png') no-repeat center;
+    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
     background-size: 100% 110%;
     margin:auto;
 }
 
 .third_mini_popup {
     z-index: 1;
-    background: url('img/CARTE-POPUP_SOPHIA.png') no-repeat center;
+    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
     background-size: 100% 110%;
     margin:auto;
 }
 
 .fourth_mini_popup {
-    z-index: 1;
-    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
-}
-
-.fifth_mini_popup {
-    z-index: 1;
-    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
-}
-
-.sixth_mini_popup {
-    z-index: 1;
-    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
-}
-
-.seventh_mini_popup {
-    z-index: 1;
-    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
-}
-
-.eighth_mini_popup {
-    z-index: 1;
-    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
-}
-
-.ninth_mini_popup {
     z-index: 1;
     background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
     background-size: 100% 110%;
