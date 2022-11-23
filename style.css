@@ -1,396 +1,392 @@
 /* ----------------  Corps de l'IHM  ---------------------------- */
 
-body, html {
-    height: 100%;   
+body,
+html {
+  height: 100%;
 }
 
 body {
-    overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
-body { 
-    animation: fadeInAnimation ease 2s; 
-    animation-fill-mode: forwards; 
-    animation-iteration-count: 1; 
-    } 
-    @keyframes fadeInAnimation { 
-    0% { 
-    opacity: 0; 
-    } 
-    100% { 
-    opacity: 1; 
-    } 
-} 
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 .wrappert {
-    height: 100%; 
-    width: 100%;
-    display: table;   
+  height: 100%;
+  width: 100%;
+  display: table;
 }
 
 .wrapper {
-    height: 100%;
-    vertical-align: middle;
-    display: table-cell;
-    text-align: center;
+  height: 100%;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
 }
 
-.main-img{
-    position: relative;
-    left: 5%;
-    height: 100%;
-    width: auto;
+.main-img {
+  position: relative;
+  left: 5%;
+  height: 100%;
+  width: auto;
 }
 
 img {
-    position: relative;
-    height: 100%;
-    width: 80%;
-    left: 5%;
+  position: relative;
+  height: 100%;
+  width: 80%;
+  left: 5%;
 }
 
-a:link { 
- text-decoration:none; 
-} 
-a:hover{
-    color: white;
+a:link {
+  text-decoration: none;
 }
-
+a:hover {
+  color: white;
+}
 
 /* ----------------  Partie POPUPS  ---------------------------- */
 
 /* Permet d'adapter la taille des boutons */
-.button_popup{
-    background: no-repeat center;
-    border: none; 
-    cursor: pointer;
+.button_popup {
+  background: no-repeat center;
+  border: none;
+  cursor: pointer;
 }
-.button_position{
-    z-index: 10;
-    position: absolute;
-    width: 6%;
-    height: 6%;
+.button_position {
+  z-index: 10;
+  position: absolute;
+  width: 6%;
+  height: 6%;
 }
-.button_position_2{
-    z-index: 10;
-    position: absolute;
-    width: 4.85%;
-    height: 4.85%;
+.button_position_2 {
+  z-index: 10;
+  position: absolute;
+  width: 4.85%;
+  height: 4.85%;
 }
 
 /* Permet de placer les boutons */
 .first_room {
-    top: 47%;
-    left: 30%;
+  top: 47%;
+  left: 30%;
 }
 .second-room {
-    top: 45%;
-    left: 59%;
+  top: 45%;
+  left: 59%;
 }
 .third-room {
-    top: 45%;
-    left: 82%;
+  top: 45%;
+  left: 82%;
 }
 
 /* Fonction permettant d'agrandir les bouton lorsque le curseur passe devant */
 .agrandir {
-    max-width : 100%;
-    height : auto;
-    margin: 0 auto;
-    transition: transform .4s;
-}
-   
-.agrandir:hover {
-    transform: scale(1.5);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.4s;
 }
 
-.agrandir_arrow{
-    max-width : 100%;
-    height : auto;
-    margin: 0 auto;
-    transition: transform .4s;
+.agrandir:hover {
+  transform: scale(1.5);
+}
+
+.agrandir_arrow {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  transition: transform 0.4s;
 }
 
 .agrandir_arrow:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 #popup-img {
-    z-index: 100;
-    position: relative;
-    height: 350px;
+  z-index: 100;
+  position: relative;
+  height: 350px;
 }
 
 .img-popup {
-    z-index: 100;
-    position: relative;
-    width: 100%;
-    height: auto; 
+  z-index: 100;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
 
 .button-arrow {
-    background: no-repeat center;
-    border: none; 
-    cursor: pointer;
+  background: no-repeat center;
+  border: none;
+  cursor: pointer;
 }
 
 .main_img_popup {
-    z-index: 1;
-    position: absolute;
-    width: 47.5%;
-    height: 57.5%;
-    opacity: 0%;
-    transition:opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
+  z-index: 1;
+  position: absolute;
+  width: 47.5%;
+  height: 57.5%;
+  opacity: 0%;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
 }
 
 .second_img_popup {
-    z-index: 10;
-    position: absolute;
-    top: 150px;
-    left: 325px;
-    width: 47.5%;
-    height: 57.5%;
-    opacity: 0%;
-    transition:opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
+  z-index: 10;
+  position: absolute;
+  top: 150px;
+  left: 325px;
+  width: 47.5%;
+  height: 57.5%;
+  opacity: 0%;
+  transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s;
 }
 
 .arrow {
-    z-index: 2000;
-    position: absolute;
-    width: 13%;
+  z-index: 2000;
+  position: absolute;
+  width: 13%;
 }
 
 .first_popup {
-    background: url('img/CARTE-POPUP_SOPHIA.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
-    top: 28.5%;
-    left: 40%;
+  background: url("img/CARTE-POPUP_SOPHIA.png") no-repeat center;
+  background-size: 100% 110%;
+  margin: auto;
+  top: 28.5%;
+  left: 40%;
 }
 
 .second_popup {
-    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
-    top: 33%;
-    left: 18%;    
+  background: url("img/CARTE-POPUP_RHA.png") no-repeat center;
+  background-size: 100% 110%;
+  margin: auto;
+  top: 33%;
+  left: 18%;
 }
 
 .third_popup {
-    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
-    top: 38%;
-    left: 40%;    
+  background: url("img/CARTE-POPUP_AIXMED.png") no-repeat center;
+  background-size: 100% 110%;
+  margin: auto;
+  top: 38%;
+  left: 40%;
 }
 
 .first_mini_popup {
-    z-index: 1;
-    background: url('img/CARTE-POPUP_SOPHIA.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
+  z-index: 1;
+  background: url("img/CARTE-POPUP_SOPHIA.png") no-repeat center;
+  background-size: 100% 110%;
+  margin: auto;
 }
 
 .second_mini_popup {
-    z-index: 1;
-    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
+  z-index: 1;
+  background: url("img/CARTE-POPUP_RHA.png") no-repeat center;
+  background-size: 100% 110%;
+  margin: auto;
 }
 
 .third_mini_popup {
-    z-index: 1;
-    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
+  z-index: 1;
+  background: url("img/CARTE-POPUP_AIXMED.png") no-repeat center;
+  background-size: 100% 110%;
+  margin: auto;
 }
 
 .fourth_mini_popup {
-    z-index: 1;
-    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
-    background-size: 100% 110%;
-    margin:auto;
+  z-index: 1;
+  background: url("img/CARTE-POPUP_AIXMED.png") no-repeat center;
+  background-size: 100% 110%;
+  margin: auto;
 }
 
 .first_popup_first_arrow {
-    top: 25%;
-    left: 45%;
+  top: 25%;
+  left: 45%;
 }
 
 .first_popup_second_arrow {
-    top: 54%;
-    left: 45%;
+  top: 54%;
+  left: 45%;
 }
 
 .first_popup_third_arrow {
-    top: 85%;
-    left: 45%;
+  top: 85%;
+  left: 45%;
 }
 
 .second_popup_first_arrow {
-    top: 27%;
-    left: 45%;
+  top: 27%;
+  left: 45%;
 }
 
 .second_popup_second_arrow {
-    top: 55%;
-    left: 45%;
+  top: 55%;
+  left: 45%;
 }
 
 .second_popup_third_arrow {
-    top: 80%;
-    left: 45%;
+  top: 80%;
+  left: 45%;
 }
 
 .third_popup_first_arrow {
-    top: 23%;
-    left: 45%;
+  top: 23%;
+  left: 45%;
 }
 
 .third_popup_second_arrow {
-    top: 48%;
-    left: 45%;
+  top: 48%;
+  left: 45%;
 }
 
 .third_popup_third_arrow {
-    top: 78%;
-    left: 45%;
+  top: 78%;
+  left: 45%;
 }
 
 .transition_opacity {
-    opacity: 100%;
-    z-index: 3000;
+  opacity: 100%;
+  z-index: 3000;
 }
-
 
 /*  ------------------ Partie de gauche ---------------- */
 
-
 .menu_bot {
-    z-index: 5;
-    position: absolute;
-    width: 300px;
-    height: 100%;
-    left: 0px;
-    top: 0px;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+  z-index: 5;
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .menu_bot::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 .rectangle_presentations {
-    box-sizing: border-box;
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: -301px;
-    background: #55A0D8;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: -301px;
+  background: #55a0d8;
 }
 
 .presentation_text {
-    position: relative; 
-    width: 100%;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 800;
-    left: 0%;
-    font-size: 18px;
-    color: #FFFFFF;
-    cursor: pointer;
+  position: relative;
+  width: 100%;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 800;
+  left: 0%;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .line {
-    position: relative; 
-    width: 100%;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 800;
-    left: 0%;
-    font-size: 23px;
-    color: #FFFFFF;
-    cursor: default;
+  position: relative;
+  width: 100%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  left: 0%;
+  font-size: 23px;
+  color: #ffffff;
+  cursor: default;
 }
 
-.transition_box{
-    width:500px;
-    margin:0 auto;
-    background-color:beige;
-    height:200px;
-    opacity:0.2;
-    text-align:center; 
-    transition:opacity 2s;
-    -webkit-transition: opacity 2s;  
-  }
-  
-  .transition_box:hover{
-  opacity:1;
-  }
+.transition_box {
+  width: 500px;
+  margin: 0 auto;
+  background-color: beige;
+  height: 200px;
+  opacity: 0.2;
+  text-align: center;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
+}
 
-  .moved {
-    transform: translate(-97%);
-  }
+.transition_box:hover {
+  opacity: 1;
+}
 
-  /* Partie horaires */
+.moved {
+  transform: translate(-97%);
+}
+
+/* Partie horaires */
 
 .image_horaires {
-    z-index: 5000;
-    position: absolute;
-    top: 0%;
-    left: 98%;
-    width: 80%;
-    height: 100%;
-    transition: transform 1.5s;
+  z-index: 5000;
+  position: absolute;
+  top: 0%;
+  left: 98%;
+  width: 80%;
+  height: 100%;
+  transition: transform 1.5s;
 }
 
 .image_horaire_2 {
-    z-index: 5000;
-    background: url('img/prochaine_pres.png') no-repeat center;
-    background-size: 100% 100%;
-   
+  z-index: 5000;
+  background: url("img/prochaine_pres.png") no-repeat center;
+  background-size: 100% 100%;
 }
 
 .hour_actual {
-    z-index: 5500;
-    position: relative;
-    background: url('img/fleche.png') no-repeat center;
-    background-size: 100% 100%;
-    margin:auto;
-    top: 15%;
-    left: -41%;
-    width: 3%;
-    height: 77%;
+  z-index: 5500;
+  position: relative;
+  background: url("img/fleche.png") no-repeat center;
+  background-size: 100% 100%;
+  margin: auto;
+  top: 15%;
+  left: -41%;
+  width: 3%;
+  height: 77%;
 }
 
 .cursor_pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .exit-planning {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .first_column {
-    display: inline;
+  display: inline;
 }
 .second_column {
-    display: inline;
+  display: inline;
 }
 .third_column {
-    display: inline;
+  display: inline;
 }
 .fourth_column {
-    display: inline;
+  display: inline;
 }
 .fifth_column {
-    display: inline;
+  display: inline;
 }
 .sixth_column {
-    display: inline;
+  display: inline;
 }
-
