@@ -6,20 +6,6 @@ const second_btn = document.querySelector('.second_button');
 const second_popup = document.querySelector('.second_popup');
 const third_btn = document.querySelector('.third_button');
 const third_popup = document.querySelector('.third_popup');
-const fourth_btn = document.querySelector('.fourth_button');
-const fourth_popup = document.querySelector('.fourth_popup');
-const fifth_btn = document.querySelector('.fifth_button');
-const fifth_popup = document.querySelector('.fifth_popup');
-const sixth_btn = document.querySelector('.sixth_button');
-const sixth_popup = document.querySelector('.sixth_popup');
-const seventh_btn = document.querySelector('.seventh_button');
-const seventh_popup = document.querySelector('.seventh_popup');
-const eighth_btn = document.querySelector('.eighth_button');
-const eighth_popup = document.querySelector('.eighth_popup');
-const ninth_btn = document.querySelector('.ninth_button');
-const ninth_popup = document.querySelector('.ninth_popup');
-const tenth_btn = document.querySelector('.tenth_button');
-const tenth_popup = document.querySelector('.tenth_popup');
 const background = document.querySelector('.wrappert');
 const planning = document.querySelector('.image_horaires');
 const exit_planning = document.querySelector('.exit-planning')
@@ -33,26 +19,9 @@ const shortcut_3 = document.querySelector('.shortcut_3')
 const shortcut_4 = document.querySelector('.shortcut_4')
 const shortcut_5 = document.querySelector('.shortcut_5')
 const shortcut_6 = document.querySelector('.shortcut_6')
+const shortcut_7 = document.querySelector('.shortcut_7')
 const shortcut_8 = document.querySelector('.shortcut_8')
 const shortcut_9 = document.querySelector('.shortcut_9')
-const shortcut_10 = document.querySelector('.shortcut_10')
-const shortcut_11 = document.querySelector('.shortcut_11')
-const shortcut_12 = document.querySelector('.shortcut_12')
-const shortcut_13 = document.querySelector('.shortcut_13')
-const shortcut_14 = document.querySelector('.shortcut_14')
-const shortcut_15 = document.querySelector('.shortcut_15')
-const shortcut_16 = document.querySelector('.shortcut_16')
-const shortcut_18 = document.querySelector('.shortcut_18')
-const shortcut_19 = document.querySelector('.shortcut_19')
-const shortcut_20 = document.querySelector('.shortcut_20')
-const shortcut_21 = document.querySelector('.shortcut_21')
-const shortcut_22 = document.querySelector('.shortcut_22')
-const shortcut_23 = document.querySelector('.shortcut_23')
-const shortcut_24 = document.querySelector('.shortcut_24')
-const shortcut_26 = document.querySelector('.shortcut_26')
-const shortcut_27 = document.querySelector('.shortcut_27')
-const shortcut_28 = document.querySelector('.shortcut_28')
-const shortcut_29 = document.querySelector('.shortcut_29')
 const first_mini_popup = document.querySelector('.first_mini_popup')
 const second_mini_popup = document.querySelector('.second_mini_popup')
 const third_mini_popup = document.querySelector('.third_mini_popup')
@@ -62,7 +31,6 @@ const sixth_mini_popup = document.querySelector('.sixth_mini_popup')
 const seventh_mini_popup = document.querySelector('.seventh_mini_popup')
 const eighth_mini_popup = document.querySelector('.eighth_mini_popup')
 const ninth_mini_popup = document.querySelector('.ninth_mini_popup')
-const tenth_mini_popup = document.querySelector('.tenth_mini_popup')
 
 const actual_hour = document.querySelector('.hour_actual')
 
@@ -94,24 +62,10 @@ background.addEventListener('click',  () => {
     if (!clicked1 && block1 == false) { first_popup.classList.remove('transition_opacity'); isVisible1 = false; }
     if (!clicked2 && block2 == false) { second_popup.classList.remove('transition_opacity'); isVisible2 = false; }
     if (!clicked3 && block3 == false) { third_popup.classList.remove('transition_opacity'); isVisible3 = false; }
-    if (!clicked4 && block4 == false) { fourth_popup.classList.remove('transition_opacity'); isVisible4 = false; }
-    if (!clicked5 && block5 == false) { fifth_popup.classList.remove('transition_opacity'); isVisible5 = false; }
-    if (!clicked6 && block6 == false) { sixth_popup.classList.remove('transition_opacity'); isVisible6 = false; }
-    if (!clicked7 && block7 == false) { seventh_popup.classList.remove('transition_opacity'); isVisible7 = false; }
-    if (!clicked8 && block8 == false) { eighth_popup.classList.remove('transition_opacity'); isVisible8 = false; }
-    if (!clicked9 && block9 == false) { ninth_popup.classList.remove('transition_opacity'); isVisible9 = false; }
-    if (!clicked10 && block10 == false) { tenth_popup.classList.remove('transition_opacity'); isVisible10 = false; }
 
     clicked1 = false; block1 = false;
     clicked2 = false; block2 = false;
     clicked3 = false; block3 = false;
-    clicked4 = false; block4 = false;
-    clicked5 = false; block5 = false;
-    clicked6 = false; block6 = false;
-    clicked7 = false; block7 = false;
-    clicked8 = false; block8 = false;
-    clicked9 = false; block9 = false;
-    clicked10 = false; block10 = false;
     
 });
 
@@ -135,48 +89,6 @@ third_btn.addEventListener('click', () => {
     isVisible3 ? third_popup.classList.add('transition_opacity') : third_popup.classList.remove('transition_opacity');
 });
 
-fourth_btn.addEventListener('click', () => {
-    clicked4 = true;
-    isVisible4 = !isVisible4;
-    isVisible4 ? fourth_popup.classList.add('transition_opacity') : fourth_popup.classList.remove('transition_opacity');
-});
-
-fifth_btn.addEventListener('click', () => {
-    clicked5 = true;
-    isVisible5 = !isVisible5;
-    isVisible5 ? fifth_popup.classList.add('transition_opacity') : fifth_popup.classList.remove('transition_opacity');
-});
-
-sixth_btn.addEventListener('click', () => {
-    clicked6 = true;
-    isVisible6 = !isVisible6;
-    isVisible6 ? sixth_popup.classList.add('transition_opacity') : sixth_popup.classList.remove('transition_opacity');
-});
-
-seventh_btn.addEventListener('click', () => {
-    clicked7 = true;
-    isVisible7 = !isVisible7;
-    isVisible7 ? seventh_popup.classList.add('transition_opacity') : seventh_popup.classList.remove('transition_opacity');
-});
-
-eighth_btn.addEventListener('click', () => {
-    clicked8 = true;
-    isVisible8 = !isVisible8;
-    isVisible8 ? eighth_popup.classList.add('transition_opacity') : eighth_popup.classList.remove('transition_opacity');
-});
-
-ninth_btn.addEventListener('click', () => {
-    clicked9 = true;
-    isVisible9 = !isVisible9;
-    isVisible9 ? ninth_popup.classList.add('transition_opacity') : ninth_popup.classList.remove('transition_opacity');
-});
-
-tenth_btn.addEventListener('click', () => {
-    clicked10 = true;
-    isVisible10 = !isVisible10;
-    isVisible10 ? tenth_popup.classList.add('transition_opacity') : tenth_popup.classList.remove('transition_opacity');
-});
-
 
 // lorsque une popup est présente et que l'on clique dessus, cela va aussi activer la fonction "background.addEventListener"
 // ce qui fera disparaitre la popup.
@@ -191,34 +103,6 @@ second_popup.addEventListener('click', () => {
 
 third_popup.addEventListener('click', () => {
     block3 = true;
-});
-
-fourth_popup.addEventListener('click', () => {
-    block4 = true;
-});
-
-fifth_popup.addEventListener('click', () => {
-    block5 = true;
-});
-
-sixth_popup.addEventListener('click', () => {
-    block6 = true;
-});
-
-seventh_popup.addEventListener('click', () => {
-    block7 = true;
-});
-
-eighth_popup.addEventListener('click', () => {
-    block8 = true;
-});
-
-ninth_popup.addEventListener('click', () => {
-    block9 = true;
-});
-
-tenth_popup.addEventListener('click', () => {
-    block10 = true;
 });
 
 
@@ -266,6 +150,13 @@ shortcut_6.addEventListener("mouseout", () => {
     second_mini_popup.classList.remove('transition_opacity')
 });
 
+shortcut_7.addEventListener("mouseenter", () => {
+    third_mini_popup.classList.add('transition_opacity')
+});
+shortcut_7.addEventListener("mouseout", () => {
+    third_mini_popup.classList.remove('transition_opacity')
+});
+
 shortcut_8.addEventListener("mouseenter", () => {
     third_mini_popup.classList.add('transition_opacity')
 });
@@ -274,136 +165,10 @@ shortcut_8.addEventListener("mouseout", () => {
 });
 
 shortcut_9.addEventListener("mouseenter", () => {
-    third_mini_popup.classList.add('transition_opacity')
+    fourth_mini_popup.classList.add('transition_opacity')
 });
 shortcut_9.addEventListener("mouseout", () => {
-    third_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_10.addEventListener("mouseenter", () => {
-    fourth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_10.addEventListener("mouseout", () => {
     fourth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_11.addEventListener("mouseenter", () => {
-    fourth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_11.addEventListener("mouseout", () => {
-    fourth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_12.addEventListener("mouseenter", () => {
-    fourth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_12.addEventListener("mouseout", () => {
-    fourth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_13.addEventListener("mouseenter", () => {
-    fifth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_13.addEventListener("mouseout", () => {
-    fifth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_14.addEventListener("mouseenter", () => {
-    fifth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_14.addEventListener("mouseout", () => {
-    fifth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_15.addEventListener("mouseenter", () => {
-    fifth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_15.addEventListener("mouseout", () => {
-    fifth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_16.addEventListener("mouseenter", () => {
-    sixth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_16.addEventListener("mouseout", () => {
-    sixth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_18.addEventListener("mouseenter", () => {
-    sixth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_18.addEventListener("mouseout", () => {
-    sixth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_19.addEventListener("mouseenter", () => {
-    seventh_mini_popup.classList.add('transition_opacity')
-});
-shortcut_19.addEventListener("mouseout", () => {
-    seventh_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_20.addEventListener("mouseenter", () => {
-    seventh_mini_popup.classList.add('transition_opacity')
-});
-shortcut_20.addEventListener("mouseout", () => {
-    seventh_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_21.addEventListener("mouseenter", () => {
-    seventh_mini_popup.classList.add('transition_opacity')
-});
-shortcut_21.addEventListener("mouseout", () => {
-    seventh_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_22.addEventListener("mouseenter", () => {
-    eighth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_22.addEventListener("mouseout", () => {
-    eighth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_23.addEventListener("mouseenter", () => {
-    eighth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_23.addEventListener("mouseout", () => {
-    eighth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_24.addEventListener("mouseenter", () => {
-    eighth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_24.addEventListener("mouseout", () => {
-    eighth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_26.addEventListener("mouseenter", () => {
-    ninth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_26.addEventListener("mouseout", () => {
-    ninth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_27.addEventListener("mouseenter", () => {
-    tenth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_27.addEventListener("mouseout", () => {
-    tenth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_28.addEventListener("mouseenter", () => {
-    tenth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_28.addEventListener("mouseout", () => {
-    tenth_mini_popup.classList.remove('transition_opacity')
-});
-
-shortcut_29.addEventListener("mouseenter", () => {
-    tenth_mini_popup.classList.add('transition_opacity')
-});
-shortcut_29.addEventListener("mouseout", () => {
-    tenth_mini_popup.classList.remove('transition_opacity')
 });
 
 

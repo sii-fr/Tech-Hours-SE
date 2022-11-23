@@ -45,7 +45,8 @@ body {
 img {
     position: relative;
     height: 100%;
-    width: 50%;
+    width: 80%;
+    left: 5%;
 }
 
 a:link { 
@@ -67,8 +68,8 @@ a:hover{
 .button_position{
     z-index: 10;
     position: absolute;
-    width: 7%;
-    height: 7%;
+    width: 6%;
+    height: 6%;
 }
 .button_position_2{
     z-index: 10;
@@ -79,55 +80,16 @@ a:hover{
 
 /* Permet de placer les boutons */
 .first_room {
-    top: 41%;
-    left: 43%;
+    top: 47%;
+    left: 30%;
 }
 .second-room {
-    top: 28%;
-    left: 49.5%;
-    visibility: hidden;
+    top: 45%;
+    left: 59%;
 }
 .third-room {
-    top: 32.75%;
-    left: 53.40%;
-    visibility: hidden;
-}
-.fourth-room {
-    top: 47.5%;
-    left: 34%;
-    visibility: hidden;
-}
-.fifth-room {
-    top: 56.5%;
-    left: 41%;
-    visibility: hidden;
-}
-.sixth-room {
-    top: 39.5%;
-    left: 63%;
-}
-.seventh-room {
-    top: 79%;
-    left: 43%;
-}
-.eighth-room {
-    top: 84%;
-    left: 33%;
-    visibility: hidden;
-}
-.ninth-room {
-    top: 89%;
-    left: 37%;
-    visibility: hidden;
-}
-.tenth-room {
-    top: 88%;
-    left: 60%;
-    visibility: hidden;
-}
-.eleventh-room {
-    top: 2.5%;
-    left: 66.5%;
+    top: 45%;
+    left: 82%;
 }
 
 /* Fonction permettant d'agrandir les bouton lorsque le curseur passe devant */
@@ -201,300 +163,135 @@ a:hover{
 }
 
 .first_popup {
-    background: url('img/POPUP_Grace_Hopper.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_SOPHIA.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
     top: 28.5%;
-    left: 49%;
+    left: 40%;
 }
 
 .second_popup {
-    background: url('img/POPUP_Alan_Turing.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
     top: 33%;
-    left: 9%;    
-    visibility: hidden;
+    left: 18%;    
 }
 
 .third_popup {
-    background: url('img/POPUP_Mary_Jackson.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
     top: 38%;
-    left: 13%;    
-    visibility: hidden;
-}
-
-.fourth_popup {
-    background: url('img/POPUP_Ada_Lovelace.png') no-repeat center;
-    background-size: 100% 100%;
-    margin:auto;
-    top: 25%;
-    left: 45%;
-    visibility: hidden;
-}
-
-.fifth_popup {
-    background: url('img/POPUP_Leonard_De_Vinci.png') no-repeat center;
-    background-size: 100% 100%;
-    margin:auto;
-    top: 25%;
-    left: 50.5%;
-    visibility: hidden;
-}
-
-.sixth_popup {
-    background: url('img/POPUP_Valentina_Terechkova.png') no-repeat center;
-    background-size: 100% 100%;
-    margin:auto;
-    top: 15%;
-    left: 26.5%;
-}
-
-.seventh_popup {
-    background: url('img/POPUP_banc_arguin.png') no-repeat center;
-    background-size: 100% 100%;
-    margin:auto;
-    top: 22%;
-    left: 39%;
-}
-
-.eighth_popup {
-    background: url('img/POPUP_dune_du_pyla.png') no-repeat center;
-    background-size: 100% 100%;
-    margin:auto;
-    top: 26.5%;
-    left: 42.5%;
-    visibility: hidden;
-}
-
-.ninth_popup {
-    background: url('img/POPUP_miroir_eau.png') no-repeat center;
-    background-size: 100% 100%;
-    margin:auto;
-    top: 31%;
-    left: 47%;
-    visibility: hidden;
-}
-
-.tenth_popup {
-    background: url('img/POPUP_Einstein.png') no-repeat center;
-    background-size: 100% 100%;
-    margin:auto;
-    top: 30%;
-    left: 44%;
-    visibility: hidden;
+    left: 40%;    
 }
 
 .first_mini_popup {
     z-index: 1;
-    background: url('img/POPUP_Grace_Hopper.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_SOPHIA.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
 }
 
 .second_mini_popup {
     z-index: 1;
-    background: url('img/POPUP_Alan_Turing.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_SOPHIA.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
 }
 
 .third_mini_popup {
     z-index: 1;
-    background: url('img/POPUP_Mary_Jackson.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_SOPHIA.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
 }
 
 .fourth_mini_popup {
     z-index: 1;
-    background: url('img/POPUP_Ada_Lovelace.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
 }
 
 .fifth_mini_popup {
     z-index: 1;
-    background: url('img/POPUP_Leonard_De_Vinci.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
 }
 
 .sixth_mini_popup {
     z-index: 1;
-    background: url('img/POPUP_Valentina_Terechkova.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_RHA.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
 }
 
 .seventh_mini_popup {
     z-index: 1;
-    background: url('img/POPUP_banc_arguin.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
 }
 
 .eighth_mini_popup {
     z-index: 1;
-    background: url('img/POPUP_dune_du_pyla.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
 }
 
 .ninth_mini_popup {
     z-index: 1;
-    background: url('img/POPUP_miroir_eau.png') no-repeat center;
-    background-size: 100% 100%;
-    margin:auto;
-}
-
-.tenth_mini_popup {
-    z-index: 1;
-    background: url('img/POPUP_Einstein.png') no-repeat center;
-    background-size: 100% 100%;
+    background: url('img/CARTE-POPUP_AIXMED.png') no-repeat center;
+    background-size: 100% 110%;
     margin:auto;
 }
 
 .first_popup_first_arrow {
-    top: 22%;
-    left: 37%;
+    top: 25%;
+    left: 45%;
 }
 
 .first_popup_second_arrow {
-    top: 63%;
-    left: 37%;
+    top: 54%;
+    left: 45%;
 }
 
 .first_popup_third_arrow {
-    top: 90.5%;
-    left: 37%;
+    top: 85%;
+    left: 45%;
 }
 
 .second_popup_first_arrow {
-    top: 22%;
-    left: 38%;
+    top: 27%;
+    left: 45%;
 }
 
 .second_popup_second_arrow {
-    top: 54%;
-    left: 38%;
+    top: 55%;
+    left: 45%;
 }
 
 .second_popup_third_arrow {
-    top: 89%;
-    left: 38%;
+    top: 80%;
+    left: 45%;
 }
 
 .third_popup_first_arrow {
-    top: 24%;
-    left: 37%;
+    top: 23%;
+    left: 45%;
 }
 
 .third_popup_second_arrow {
-    top: 52%;
-    left: 37%;
+    top: 48%;
+    left: 45%;
 }
 
 .third_popup_third_arrow {
-    top: 82%;
-    left: 37%;
-}
-
-.fourth_popup_first_arrow {
-    top: 25%;
-    left: 37%;
-}
-
-.fourth_popup_second_arrow {
-    top: 60%;
-    left: 37%;
-}
-
-.fourth_popup_third_arrow {
-    top: 93.5%;
-    left: 37%;
-}
-
-.fifth_popup_first_arrow {
-    top: 22%;
-    left: 37%;
-}
-
-.fifth_popup_second_arrow {
-    top: 54.5%;
-    left: 37%;
-}
-
-.fifth_popup_third_arrow {
-    top: 93.5%;
-    left: 37%;
-}
-
-.sixth_popup_first_arrow {
-    top: 23.5%;
-    left: 38%;
-}
-
-.sixth_popup_second_arrow {
-    top: 58%;
-    left: 38%;
-}
-
-.sixth_popup_third_arrow {
-    top: 94.5%;
-    left: 38%;
-}
-
-.seventh_popup_first_arrow {
-    top: 24%;
-    left: 37%;
-}
-
-.seventh_popup_second_arrow {
-    top: 52%;
-    left: 37%;
-}
-
-.seventh_popup_third_arrow {
-    top: 87.5%;
-    left: 37%;
-}
-
-.eighth_popup_first_arrow {
-    top: 31.5%;
-    left: 38%;
-}
-
-.eighth_popup_second_arrow {
-    top: 65%;
-    left: 38%;
-}
-
-.eighth_popup_third_arrow {
-    top: 94%;
-    left: 38%;
-}
-
-.ninth_popup_first_arrow {
-    top: 47%;
-    left: 40%;
-}
-
-.tenth_popup_first_arrow {
-    top: 25%;
-    left: 37%;
-}
-
-.tenth_popup_second_arrow {
-    top: 54.5%;
-    left: 37%;
-}
-
-.tenth_popup_third_arrow {
-    top: 92%;
-    left: 37%;
+    top: 78%;
+    left: 45%;
 }
 
 .transition_opacity {
@@ -527,8 +324,8 @@ a:hover{
     left: 0%;
     right: 0%;
     top: 0%;
-    bottom: -2000px;
-    background: linear-gradient(178.01deg, #55A0D8 18.85%, #82B942 73.69%);
+    bottom: -301px;
+    background: #55A0D8;
 }
 
 .presentation_text {
@@ -550,7 +347,7 @@ a:hover{
     font-style: normal;
     font-weight: 800;
     left: 0%;
-    font-size: 18px;
+    font-size: 23px;
     color: #FFFFFF;
     cursor: default;
 }
