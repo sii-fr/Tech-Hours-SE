@@ -245,17 +245,17 @@ a:hover {
 }
 
 .third_popup_first_arrow {
-  top: 23%;
+  top: 17%;
   left: 45%;
 }
 
 .third_popup_second_arrow {
-  top: 48%;
+  top: 43%;
   left: 45%;
 }
 
 .third_popup_third_arrow {
-  top: 78%;
+  top: 73%;
   left: 45%;
 }
 
@@ -348,7 +348,7 @@ a:hover {
 
 .image_horaire_2 {
   z-index: 5000;
-  background: url("img/prochaine_pres.png") no-repeat center;
+  background: url("img/prochaine_pres2.png") no-repeat center;
   background-size: 100% 100%;
 }
 
