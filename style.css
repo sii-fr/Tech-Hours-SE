@@ -159,7 +159,7 @@ a:hover {
 .arrow {
   z-index: 2000;
   position: absolute;
-  width: 13%;
+  width: 8%;
 }
 
 .first_popup {
@@ -215,48 +215,48 @@ a:hover {
 }
 
 .first_popup_first_arrow {
-  top: 25%;
-  left: 45%;
+  top: 17%;
+  left: 50%;
 }
 
 .first_popup_second_arrow {
-  top: 54%;
-  left: 45%;
+  top: 45%;
+  left: 50%;
 }
 
 .first_popup_third_arrow {
-  top: 85%;
-  left: 45%;
+  top: 75%;
+  left: 50%;
 }
 
 .second_popup_first_arrow {
-  top: 27%;
-  left: 46%;
+  top: 20%;
+  left: 50%;
 }
 
 .second_popup_second_arrow {
-  top: 55%;
-  left: 45%;
+  top: 47%;
+  left: 50%;
 }
 
 .second_popup_third_arrow {
-  top: 82%;
-  left: 45%;
+  top: 77%;
+  left: 50%;
 }
 
 .third_popup_first_arrow {
-  top: 17%;
-  left: 45%;
+  top: 19%;
+  left: 50%;
 }
 
 .third_popup_second_arrow {
-  top: 43%;
-  left: 45%;
+  top: 45%;
+  left: 50%;
 }
 
 .third_popup_third_arrow {
-  top: 73%;
-  left: 45%;
+  top: 75%;
+  left: 50%;
 }
 
 .transition_opacity {
