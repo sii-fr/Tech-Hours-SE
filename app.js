@@ -7,9 +7,10 @@ const second_popup = document.querySelector(".second_popup");
 const third_btn = document.querySelector(".third_button");
 const third_popup = document.querySelector(".third_popup");
 const background = document.querySelector(".wrappert");
-const planning = document.querySelector(".image_horaires");
 const exit_planning = document.querySelector(".exit-planning");
 const open_horaire = document.querySelector(".open_horaire");
+const planning_button = document.getElementById("planning_button");
+const pl = document.getElementById("pl");
 
 var open = 0;
 
@@ -59,6 +60,7 @@ let block9 = false;
 let isVisible10 = false;
 let clicked10 = false;
 let block10 = false;
+
 
 // Permet d'avoir l'heure en tant réel
 var now = new Date();
@@ -200,98 +202,6 @@ shortcut_9.addEventListener("mouseout", () => {
   fourth_mini_popup.classList.remove("transition_opacity");
 });
 
-// fonction permettant d'activer ou non les zones cliquables dans la bande de droite et de faire déplacer la barre en fonction du temps.
-open_horaire.addEventListener("click", () => {
-  if (open == 0) {
-    planning.classList.add("moved");
-
-    var hour = Number(("0" + now.getHours()).slice(-2));
-    minutes_test = Number(("0" + now.getMinutes()).slice(-2));
-
-    if (hour < 11) actual_hour.style.left = "-41%";
-    else if (hour >= 14) actual_hour.style.left = "44.70%";
-    else {
-      now = new Date();
-      minutes_test = Number(("0" + now.getMinutes()).slice(-2));
-      var minutes_pourcentage = ((hour - 11) * 60 + minutes_test) / 180; // le "180" à la fin représente les 3h que dure l'évènement
-      var add_pourcentage = -41 + minutes_pourcentage * 85.7; // le 85.70 représente la différence entre le début et la fin de la bande horaire (44.70 - (-41))
-      nb_pixel = add_pourcentage.toString() + "%";
-      actual_hour.style.left = nb_pixel;
-      console.log(actual_hour.style.left);
-    }
-
-    add_display_none(first_column);
-    add_display_none(second_column);
-    add_display_none(third_column);
-    add_display_none(fourth_column);
-    add_display_none(fifth_column);
-    add_display_none(sixth_column);
-
-    if (hour < 11) add_display_inline(first_column);
-    if (hour >= 11 && hour < 12) {
-      if (minutes_test <= 35) add_display_inline(first_column);
-      if (minutes_test >= 25) add_display_inline(second_column);
-      if (minutes_test >= 55) add_display_inline(third_column);
-    } else if (hour < 13) {
-      if (minutes_test <= 5) add_display_inline(second_column);
-      if (minutes_test <= 35) add_display_inline(third_column);
-      if (minutes_test >= 25) add_display_inline(fourth_column);
-      if (minutes_test >= 55) add_display_inline(fifth_column);
-    } else if (hour < 14) {
-      if (minutes_test <= 5) add_display_inline(fourth_column);
-      if (minutes_test <= 35) add_display_inline(fifth_column);
-      if (minutes_test >= 25) add_display_inline(sixth_column);
-    } else if (hour >= 14) add_display_inline(sixth_column);
-    open = 1;
-  } else {
-    planning.classList.remove("moved");
-    open = 0;
-  }
-});
-
-exit_planning.addEventListener("click", () => {
-  planning.classList.remove("moved");
-  var hour = Number(("0" + now.getHours()).slice(-2));
-  minutes_test = Number(("0" + now.getMinutes()).slice(-2));
-
-  if (hour < 11) actual_hour.style.left = "-41%";
-  else if (hour >= 14) actual_hour.style.left = "44.70%";
-  else {
-    now = new Date();
-    minutes_test = Number(("0" + now.getMinutes()).slice(-2));
-    var minutes_pourcentage = ((hour - 11) * 60 + minutes_test) / 180;
-    var add_pourcentage = -41 + minutes_pourcentage * 85.7;
-    nb_pixel = add_pourcentage.toString() + "%";
-    actual_hour.style.left = nb_pixel;
-    console.log(actual_hour.style.left);
-  }
-
-  add_display_none(first_column);
-  add_display_none(second_column);
-  add_display_none(third_column);
-  add_display_none(fourth_column);
-  add_display_none(fifth_column);
-  add_display_none(sixth_column);
-
-  if (hour < 11) add_display_inline(first_column);
-  if (hour >= 11 && hour < 12) {
-    if (minutes_test <= 35) add_display_inline(first_column);
-    if (minutes_test >= 25) add_display_inline(second_column);
-    if (minutes_test >= 55) add_display_inline(third_column);
-  } else if (hour < 13) {
-    if (minutes_test <= 5) add_display_inline(second_column);
-    if (minutes_test <= 35) add_display_inline(third_column);
-    if (minutes_test >= 25) add_display_inline(fourth_column);
-    if (minutes_test >= 55) add_display_inline(fifth_column);
-  } else if (hour < 14) {
-    if (minutes_test <= 5) add_display_inline(fourth_column);
-    if (minutes_test <= 35) add_display_inline(fifth_column);
-    if (minutes_test >= 25) add_display_inline(sixth_column);
-  } else if (hour >= 14) add_display_inline(sixth_column);
-
-  open = 0;
-});
-
 function add_display_none(myNodeList) {
   for (var i = 0; i < myNodeList.length; ++i) {
     var item = myNodeList[i]; // L'appel de myNodeList.item(i) n'est pas nécessaire en JavaScript
@@ -310,3 +220,14 @@ function ch_zoom() {
   document.body.style.zoom = "100%";
   setTimeout(ch_zoom, 100);
 }
+
+
+
+
+planning_button.addEventListener("click", () => {
+  if(getComputedStyle(pl).visibility != "hidden"){
+    pl.style.visibility = "hidden";
+  } else {
+    pl.style.visibility = "visible";
+  }
+});

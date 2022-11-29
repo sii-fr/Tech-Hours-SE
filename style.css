@@ -261,7 +261,7 @@ a:hover {
 
 .transition_opacity {
   opacity: 100%;
-  z-index: 3000;
+  z-index: 9999;
 }
 
 /*  ------------------ Partie de gauche ---------------- */
@@ -334,36 +334,6 @@ a:hover {
   transform: translate(-97%);
 }
 
-/* Partie horaires */
-
-.image_horaires {
-  z-index: 5000;
-  position: absolute;
-  top: 0%;
-  left: 98%;
-  width: 80%;
-  height: 100%;
-  transition: transform 1.5s;
-}
-
-.image_horaire_2 {
-  z-index: 5000;
-  background: url("img/prochaine_pres2.png") no-repeat center;
-  background-size: 100% 100%;
-}
-
-.hour_actual {
-  z-index: 5500;
-  position: relative;
-  background: url("img/fleche.png") no-repeat center;
-  background-size: 100% 100%;
-  margin: auto;
-  top: 15%;
-  left: -41%;
-  width: 3%;
-  height: 77%;
-}
-
 .cursor_pointer {
   cursor: pointer;
 }
@@ -389,4 +359,44 @@ a:hover {
 }
 .sixth_column {
   display: inline;
+}
+
+#planning_button {
+  position: absolute;
+  top: 92%;
+  right: 1%;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgba(85, 160, 255, 1); 
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+#planning_button:hover {
+  background-color: rgba(85, 200, 255, 1);
+}
+
+#planning_button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+#pl {
+  z-index: 999;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  height: 60%;
+  width: 60%;
+  visibility: visible;
 }
