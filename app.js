@@ -10,7 +10,7 @@ const background = document.querySelector(".wrappert");
 const exit_planning = document.querySelector(".exit-planning");
 const open_horaire = document.querySelector(".open_horaire");
 const planning_button = document.getElementById("planning_button");
-const pl = document.getElementById("pl");
+const planning = document.getElementById("pl");
 
 var open = 0;
 
@@ -122,6 +122,15 @@ third_btn.addEventListener("click", () => {
     : third_popup.classList.remove("transition_opacity");
 });
 
+
+planning_button.addEventListener("click", () => {
+  if(getComputedStyle(pl).visibility != "hidden"){
+    pl.style.visibility = "hidden";
+  } else {
+    pl.style.visibility = "visible";
+  }
+});
+
 // lorsque une popup est présente et que l'on clique dessus, cela va aussi activer la fonction "background.addEventListener"
 // ce qui fera disparaitre la popup.
 // Pour remedier à ça on rajoute la variable block qui si = true n'activera la la disparition de popup.
@@ -220,14 +229,3 @@ function ch_zoom() {
   document.body.style.zoom = "100%";
   setTimeout(ch_zoom, 100);
 }
-
-
-
-
-planning_button.addEventListener("click", () => {
-  if(getComputedStyle(pl).visibility != "hidden"){
-    pl.style.visibility = "hidden";
-  } else {
-    pl.style.visibility = "visible";
-  }
-});
