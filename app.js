@@ -39,38 +39,10 @@ let block2 = false;
 let isVisible3 = false;
 let clicked3 = false;
 let block3 = false;
-let isVisible4 = false;
-let clicked4 = false;
-let block4 = false;
-let isVisible5 = false;
-let clicked5 = false;
-let block5 = false;
-let isVisible6 = false;
-let clicked6 = false;
-let block6 = false;
-let isVisible7 = false;
-let clicked7 = false;
-let block7 = false;
-let isVisible8 = false;
-let clicked8 = false;
-let block8 = false;
-let isVisible9 = false;
-let clicked9 = false;
-let block9 = false;
-let isVisible10 = false;
-let clicked10 = false;
-let block10 = false;
 
 
 // Permet d'avoir l'heure en tant réel
 var now = new Date();
-
-const first_column = document.querySelectorAll(".first_column");
-const second_column = document.querySelectorAll(".second_column");
-const third_column = document.querySelectorAll(".third_column");
-const fourth_column = document.querySelectorAll(".fourth_column");
-const fifth_column = document.querySelectorAll(".fifth_column");
-const sixth_column = document.querySelectorAll(".sixth_column");
 
 // fonction qui s'active lorsque l'action "clique" est effectué sur la class "background"
 // Cette fonction à pour but de retirer le paramètre "opacity" au css des popup et donc de les faire disparaitres.
@@ -123,6 +95,7 @@ third_btn.addEventListener("click", () => {
 });
 
 
+// Pour afficher/masque le planning avec le bouton en bas à droite.
 planning_button.addEventListener("click", () => {
   if(getComputedStyle(pl).visibility != "hidden"){
     pl.style.visibility = "hidden";
